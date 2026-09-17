@@ -47,9 +47,9 @@ img{
 
     /* FONT SIZE */
     --font-size-16: 1rem;
-    --font-size-24: 24px;
-    --font-size-32: 32px;
-    --font-size-48: 48px;
+    --font-size-24: 1.5rem;
+    --font-size-32: 2rem;
+    --font-size-48: 3rem;
 
     /* FONT WEIGHT */
     --font-weight-400: 400;
@@ -57,11 +57,11 @@ img{
     --font-weight-700: 700;
 
     /* SPACING */
-    --spacing-200: 24px;
-    --spacing-250: 20px;
-    --spacing-400: 32px;
-    --spacing-500: 40px;
-    --spacing-800: 64px;
+    --spacing-200: 1.5rem;
+    --spacing-250: 1.25rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+    --spacing-800: 4rem;
 }
 
 /* ===================================================
@@ -81,7 +81,7 @@ body{
 
         /* ------ HEADER ------ */
 .header {
-    width: min(100% - 2rem, 1110px);
+    width: min(100% - 2rem, 69.38rem);
     margin-inline: auto;
 }
 .navigation {
