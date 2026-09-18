@@ -21,10 +21,10 @@ img{
 }
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.06rem;
+  height: 0.06rem;
   padding: 0;
-  margin: -1px;
+  margin: -0.06rem;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
@@ -53,8 +53,10 @@ img{
 
     /* FONT WEIGHT */
     --font-weight-400: 400;
+    --font-weight-500: 500;
     --font-weight-600: 600;
     --font-weight-700: 700;
+    --font-weight-900: 900;
 
     /* SPACING */
     --spacing-200: 1.5rem;
@@ -106,3 +108,62 @@ body{
     white-space: nowrap;
 }
 
+/* ----- HERO SECTION ------ */
+.hero{
+    margin-block-start: var(--spacing-500);
+}
+
+/* ----- HERO CONTENT ------ */
+.hero-text{
+    width: min(100% - 2rem, 21.38rem);
+    margin-inline: auto;
+}
+.hero-title{
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: var(--font-weight-900);
+    color: var(--color-neutral-900);
+    font-size: var(--font-size-48);
+}
+.hero-description{
+    margin-block-start: var(--spacing-200);
+    font-weight: var(--font-weight-500);
+    line-height: 1.5;
+    color: var(--color-neutral-400);
+}
+.hero-cta{
+    margin-block-start: var(--spacing-400);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-200);   
+}
+.order-link{
+    padding: 1rem 1.5rem;
+    background-color: var(--color-orange-500);
+    border-radius: 0.5rem;
+    color: var(--color-neutral-0);
+    text-decoration: none;
+    line-height: 1.5;
+    font-weight: var(--font-weight-700);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.release-date{
+    line-height: 1.5;
+    font-weight: var(--font-weight-700);
+    text-transform: uppercase;
+    color: var(--color-neutral-400);
+} 
+.hero-image{
+    margin-block-start: var(--spacing-800);
+    transform: translateX(1.5rem);
+    display: flex;
+    align-items: center;
+}
+.keyboard-img{
+    border-radius: 1.5rem;
+    
+}
+.pattern-square{
+    display:none;
+}

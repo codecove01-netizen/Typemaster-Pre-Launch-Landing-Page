@@ -13,7 +13,7 @@
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   
   <!-- CSS STYLE -->
   <link rel="stylesheet" href="./css/style.css">
@@ -32,42 +32,56 @@
       </a>
     </nav>
   </header>
-  <main>
-    <section>
-      <div>
-        <h1>Typemaster keyboard</h1>
-        <p>Improve your productivity and gaming without breaking the bank. Upgrade to a high quality mechanical typing experience.</p>
-        <div>
-          <button type="button">Pre-order now</button>
-          <span>Release on 5/27</span>
+
+      <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+      <!-- HERO SECTION -->
+    <section class="hero">
+
+          <!-- HERO CONTENT -->
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Typemaster keyboard</h1>
+          <p class="hero-description">Improve your productivity and gaming without breaking the bank. Upgrade to a high quality mechanical typing experience.</p>
+          <div class="hero-cta">
+            <a href="#" class="order-link">
+              Pre-order now
+            </a>
+            <span class="release-date">Release on 5/27</span>
+          </div>
         </div>
-        <picture>
+        <picture class="hero-image">
           <source media="(min-width: 75rem)" srcset="./assets/desktop/image-keyboard.jpg">
           <source media="(min-width: 48rem)" srcset="./assets/tablet/image-keyboard.jpg">
-          <img src="./assets/mobile/image-keyboard.jpg" alt="Typemaster mechanical keyboard">
+          <img src="./assets/mobile/image-keyboard.jpg" alt="Typemaster mechanical keyboard" class="keyboard-img">
         </picture>  
         <div class="pattern-square">
           <img src="./assets/shared/pattern-square.svg" alt="">
         </div>  
       </div>
-      <div>
+
+          <!-- IMAGES OF KEYBOARD AND GLASS -->
+      <div class="product-images">
           <div class="pattern-square">
             <img src="./assets/shared/pattern-square.svg" alt="">
           </div>  
-          <picture>
+          <picture class="product-image product-image-phone">
             <source media="(min-width: 75rem)" srcset="./assets/desktop/image-phone-and-keyboard.jpg">
             <source media="(min-width: 48rem)" srcset="./assets/tablet/image-phone-and-keyboard.jpg">
             <img src="./assets/mobile/image-phone-and-keyboard.jpg" alt="">
           </picture>
-          <picture>
+          <picture class="product-image product-image-glass">
             <source media="(min-width: 75rem)" srcset="./assets/desktop/image-glass-and-keyboard.jpg">
             <source media="(min-width: 48rem)" srcset="./assets/tablet/image-glass-and-keyboard.jpg">
             <img src="./assets/mobile/image-glass-and-keyboard.jpg" alt="">
           </picture>
       </div>  
-      <div>
-        <h2>Mechanical wireless keyboard</h2>
-        <p>The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety of switches and keycaps, along 
+
+      <!-- SECONDARY PRODUCT SECTION -->
+      <div class="product-info">
+        <h2 class="product-title">Mechanical wireless keyboard</h2>
+        <p class="product-description">The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety of switches and keycaps, along 
             with reliable wireless connectivity.</p>
       </div>
     </section>
