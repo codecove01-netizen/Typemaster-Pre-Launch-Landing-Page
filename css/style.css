@@ -115,7 +115,7 @@ body{
 
 /* ----- HERO CONTENT ------ */
 .hero-text{
-    width: min(100% - 2rem, 21.38rem);
+    padding-inline: 1rem;
     margin-inline: auto;
 }
 .hero-title{
@@ -180,3 +180,23 @@ body{
 .keyboard-phone-img{
     transform: translateX(-1.5rem);
 } 
+
+/* ---- SECONDARY PRODUCT SECTION ---- */
+.product-info{
+    margin-block-start: var(--spacing-800);
+    padding-inline: 1rem;
+}
+.product-title{
+    font-size: var(--font-size-32);
+    font-weight: var(--font-weight-900);
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--color-neutral-900);
+    text-align: center;
+    padding-inline: 2rem;
+}
+.product-description{
+    margin-block-start: var(--spacing-200);
+    font-weight: var(--font-weight-500);
+    line-height: 1.5;
+}
