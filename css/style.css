@@ -160,10 +160,23 @@ body{
     display: flex;
     align-items: center;
 }
-.keyboard-img{
-    border-radius: 1.5rem;
-    
+.product-img{
+    border-radius: 1.5rem;    
 }
 .pattern-square{
     display:none;
 }
+
+/* ---- IMAGES OF KEYBOARD AND GLASS --- */
+.product-images{
+    display: flex;
+    align-items: center;
+    margin-block-start: var(--spacing-200);
+    padding-inline-end: var(--spacing-200);
+}
+.product-image{
+    display: block;
+}
+.keyboard-phone-img{
+    transform: translateX(-1.5rem);
+} 
