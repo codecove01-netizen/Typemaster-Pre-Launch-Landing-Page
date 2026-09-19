@@ -67,6 +67,7 @@ img{
     --spacing-500: 2.5rem;
     --spacing-600: 3rem;
     --spacing-800: 4rem;
+    --spacing-1000: 5rem;
 }
 /* ===================================================
             TYPOGRAPHY
@@ -334,7 +335,7 @@ body{
         max-width:none;
         height: 100%;
     }
-    
+
         /* ---- IMAGES OF KEYBOARD AND GLASS --- */        
     .product-images{
         margin-block-start: var(--spacing-500);
@@ -344,5 +345,44 @@ body{
     }   
     .product-image-phone {
         transform: none;
+    }
+
+    /* ---- SECONDARY PRODUCT SECTION ---- */
+    .product-info{
+        margin-block-start: var(--spacing-500);
+        margin-inline: 0;
+        display: flex;
+        justify-content: space-evenly;
+        column-gap: var(--spacing-800);
+        padding-inline: var(--spacing-400) 2.94rem;
+    }
+    .product-title{
+        padding-inline: 0;
+        text-align: left;
+    }
+    .product-description{
+        margin-block-start: 0;
+    }
+
+    /* ------ KEYBOARD FEATURES ----- */
+    .keyboard-features{
+        margin-block-start: var(--spacing-1000);
+        margin-inline: var(--spacing-400);
+        display: grid;
+        grid-template-columns: repeat(2,1fr);        
+        gap: var(--spacing-400);        
+    }
+    .feature{
+        align-items: flex-start;
+    }
+    .feature-title{
+        margin-block-start: var(--spacing-600);
+        padding-inline: 0;        
+        text-align: left;
+        max-inline-size: 12.5rem;
+    }
+    .feature-description{
+        margin-block-start: var(--spacing-200);
+        text-align: left;
     }
 }
