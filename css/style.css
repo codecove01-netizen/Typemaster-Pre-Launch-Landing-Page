@@ -291,10 +291,47 @@ body{
 
            /* ------ HEADER ------ */         
     .header{
-        margin-inline: var(--spacing-400);
+        margin-inline: 0;
+        padding-inline: var(--spacing-400);
     }
     .nav-preorder-link{
         padding: var(--spacing-150) var(--spacing-200);
     } 
 
+    /* ----- HERO SECTION ------ */
+    .hero{
+        margin-block-start: var(--spacing-600);
+    }
+    
+    /* ----- HERO CONTENT ------ */
+    .hero-content{
+        display: flex;
+        align-items: center;
+        column-gap: var(--spacing-600);
+        height: 25.56rem;
+    }
+    .hero-text{
+        padding-inline-start: var(--spacing-400);
+        margin-inline: 0;
+    }
+    .hero-title{
+        font-size: var(--font-size-56);
+    }    
+    .hero-description{
+        margin-block-start: var(--spacing-400);
+    }     
+    .hero-cta{
+        margin-block-start: var(--spacing-500);
+    }        
+    .hero-image{
+        margin-block-start: 0;
+        transform: none; 
+        height: 25.56rem;
+        flex-shrink: 0;
+    }
+    .hero-image img{
+        width: 100%;
+        max-width:none;
+        height: 100%;
+    }
 }
