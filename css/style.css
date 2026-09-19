@@ -263,7 +263,7 @@ body{
     margin-block-start: var(--spacing-400);
     font-size: var(--font-size-24);
     line-height: 1.2;
-    padding-inline: var(--spacing-800);
+    max-inline-size: 12.5rem;
     text-align: center;
 }
 .feature-description{
@@ -379,7 +379,6 @@ body{
         margin-block-start: var(--spacing-600);
         padding-inline: 0;        
         text-align: left;
-        max-inline-size: 12.5rem;
     }
     .feature-description{
         margin-block-start: var(--spacing-200);
