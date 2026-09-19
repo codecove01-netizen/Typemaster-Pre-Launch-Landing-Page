@@ -334,4 +334,15 @@ body{
         max-width:none;
         height: 100%;
     }
+    
+        /* ---- IMAGES OF KEYBOARD AND GLASS --- */        
+    .product-images{
+        margin-block-start: var(--spacing-500);
+        column-gap: var(--spacing-400);
+        margin-inline-end: 0;
+        padding-inline: var(--spacing-400) 2.94rem;
+    }   
+    .product-image-phone {
+        transform: none;
+    }
 }
