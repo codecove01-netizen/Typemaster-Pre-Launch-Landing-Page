@@ -332,7 +332,7 @@ body{
     }
     .hero-image img{
         width: 100%;
-        max-width:none;
+        max-width: none;
         height: 100%;
     }
 
@@ -388,5 +388,15 @@ body{
         /* ----- FOOTER ------ */
     .footer{
         margin-block-start: var(--spacing-1000);
+    }
+}
+
+/* ===================================================
+                DESKTOP STYLE
+======================================================= */
+@media screen and (min-width: 75rem) {
+     /* ------ HEADER ------ */         
+    .header{        
+        padding-inline: 10.31rem;
     }
 }
