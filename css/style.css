@@ -384,4 +384,9 @@ body{
         margin-block-start: var(--spacing-200);
         text-align: left;
     }
+
+        /* ----- FOOTER ------ */
+    .footer{
+        margin-block-start: var(--spacing-1000);
+    }
 }
