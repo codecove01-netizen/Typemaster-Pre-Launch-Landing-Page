@@ -288,50 +288,13 @@ body{
     body{
         padding-block: var(--spacing-500);
     }
+
            /* ------ HEADER ------ */         
     .header{
         margin-inline: var(--spacing-400);
-        border: 1px solid red;
     }
     .nav-preorder-link{
         padding: var(--spacing-150) var(--spacing-200);
     } 
-    /* ----- HERO SECTION ------ */
-    .hero{
-        margin-block-start: var(--spacing-600);
-    }
-    .hero-content{
-        /* height: 425px;
-        align-items: center; */
-        /* column-gap: var(--spacing-600); */
-        border: 1px solid red;        
-        overflow: hidden;   
-        display: flex;             
-    }
-    .hero-text{
-        padding-inline-start: var(--spacing-400);
-        padding-inline-end: 0;
 
-    } 
-    .hero-image {
-        align-self: stretch;
-        flex-shrink: 0;
-        margin-block-start: 0;
-        height: 425px;
-    } 
-    .hero-image img {
-        display: block;
-        height: 100%;
-        width: auto;
-        max-width: none;
-    }
-    .hero-title{
-        font-size: var(--font-size-56);
-    }
-    .hero-description{
-        margin-block-start: var(--spacing-400);
-    }
-    .hero-cta{
-        margin-block-start: var(--spacing-500);
-    }
 }
