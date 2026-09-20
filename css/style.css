@@ -402,7 +402,7 @@ body{
     }
      /* ------ HEADER ------ */         
     .header{        
-       max-width: 1110px;
+       max-width: 69.38rem;
        margin-inline: auto;
        padding-inline: 0;
     }  
@@ -416,7 +416,7 @@ body{
     .hero-content{
         column-gap: 7.81rem;
         height: 30rem;
-        max-width: 1110px;
+        max-width: 69.38rem;
         margin-inline: auto;
         position: relative;
     }
@@ -432,22 +432,22 @@ body{
         height: 30rem;
         flex-shrink: 1;
         min-width: 0;
-        width: 540px;
+        width: 33.75rem;
     }
 
     /* ----- PATTERN SQUARE ------ */
     .pattern-square {
         display: block;
         position: absolute;
-        top: 175px;
-        left: calc(50% + 555px + 2rem);
-        width: 255px;
-        height: 255px;
+        top: 10.94rem;
+        left: calc(50% + 34.69rem + 2rem);
+        width: 15.94rem;
+        height: 15.94rem;
     }
     .pattern-square img {
         display: block;
-        width: 255px;
-        height: 255px;
+        width: 15.94rem;
+        height: 15.94rem;
         max-width: none;
     }
 }
