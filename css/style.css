@@ -396,6 +396,10 @@ body{
                 DESKTOP STYLE
 ======================================================= */
 @media screen and (min-width: 75rem) {
+    html,
+    body {
+        overflow-x: clip;
+    }
      /* ------ HEADER ------ */         
     .header{        
        max-width: 1110px;
