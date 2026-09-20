@@ -190,7 +190,8 @@ body{
 .product-img{
     border-radius: 1.5rem;    
 }
-.pattern-square{
+.pattern-square,
+.pattern-square1{
     display:none;
 }
 
@@ -397,6 +398,8 @@ body{
 @media screen and (min-width: 75rem) {
      /* ------ HEADER ------ */         
     .header{        
-        padding-inline: 10.31rem;
-    }
+       max-width: 1110px;
+       margin-inline: auto;
+       padding-inline: 0;
+    }    
 }
