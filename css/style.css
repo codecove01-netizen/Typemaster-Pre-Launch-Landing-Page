@@ -495,5 +495,18 @@ body{
         margin-block-start: 1.25rem;
     }
 
+    /* ------ KEYBOARD FEATURES ----- */
+    .keyboard-features{
+        margin-block-start: 7.5rem;
+        margin-inline: auto;
+        max-width: 69.38rem;
+        grid-template-columns: repeat(4,1fr);        
+    }
+
+            /* ----- FOOTER ------ */
+    .footer{
+        margin-block-start: 7.5rem;
+    }
+
 
 }
