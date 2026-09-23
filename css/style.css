@@ -450,4 +450,22 @@ body{
         height: 15.94rem;
         max-width: none;
     }
+
+        /* ----- SECOND PATTERN SQUARE ------ */
+    .second-pattern-square {
+        display: block;
+        position: absolute;
+        top: 58rem;       
+        right: calc(50% + 34.69rem + 2rem);
+        width: 15.94rem;
+        height: 15.94rem; 
+    }
+    .second-pattern-square img {
+        display: block;
+        width: 15.94rem;
+        height: 15.94rem;
+        max-width: none;
+    }
+
+
 }
