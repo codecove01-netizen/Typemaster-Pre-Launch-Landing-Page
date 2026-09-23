@@ -467,5 +467,44 @@ body{
         max-width: none;
     }
 
+        /* ---- IMAGES OF KEYBOARD AND GLASS --- */        
+    .secondary-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 125px;
+        max-width: 1110px;
+        margin-inline: auto;
+    }
+    .product-images{
+        column-gap: 30px;
+        width: 730px;
+        padding-inline: 0;
+    }   
+    
+    /* ---- SECONDARY PRODUCT SECTION ---- */
+    .product-info{
+        margin-block-start: 0;
+        width: 255px;
+        height: 254px;
+        flex-direction: column;
+        column-gap: 0;
+        padding-inline: 0;
+    }
+    .product-description{
+        margin-block-start: 20px;
+    }
 
+    /* ------ KEYBOARD FEATURES ----- */
+    .keyboard-features{
+        margin-block-start: 7.5rem;
+        margin-inline: auto;
+        max-width: 69.38rem;
+        grid-template-columns: repeat(4,1fr);        
+    }
+
+            /* ----- FOOTER ------ */
+    .footer{
+        margin-block-start: 7.5rem;
+    }
 }
