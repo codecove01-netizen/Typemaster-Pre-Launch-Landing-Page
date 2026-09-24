@@ -77,36 +77,39 @@ img{
 .hero-title,
 .product-title,
 .feature-title{
-    text-transform: uppercase;
-    font-weight: var(--font-weight-900);
     color: var(--color-neutral-900);
+    font-weight: var(--font-weight-900);    
+
+    text-transform: uppercase;
 }
 
         /* ---- BUTTON LINKS ----- */
 .nav-preorder-link,
-.preorder-link{
-    border-radius: 0.5rem;
+.preorder-link{    
     font-weight: var(--font-weight-700);
-    line-height: 1.5;
+    line-height: 1.5;    
+    
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
+
+    border-radius: 0.5rem;
 }
 
 /* ===============================================
              SHARED LAYOUT
 =================================================== */
        
-/* ----SHARED SPACING ---- */
+        /* ----SHARED SPACING ---- */
 
-/* ---- Spacing 150 ---- */
+        /* ---- Spacing 150 ---- */
 .hero-text,
 .product-info,
 .keyboard-features{
     margin-inline: var(--spacing-150);
 }
 
-/* ---- Spacing 800 ---- */
+        /* ---- Spacing 800 ---- */
 .hero-image,
 .product-info,
 .keyboard-features,
@@ -118,11 +121,12 @@ img{
             GLOBAL LAYOUT
 ======================================================= */
 body{
+    padding-block: var(--spacing-200);
+
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-400);
     font-family: var(--font-family-barlow);
-    color: var(--color-neutral-400);
-    padding-block: var(--spacing-200);
+    color: var(--color-neutral-400);    
 }
 
 /* ===================================================
@@ -137,6 +141,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     gap: var(--spacing-150);
 }
 .logo-link,
@@ -145,104 +150,122 @@ body{
 }
 .nav-preorder-link{
     padding: 0.75rem var(--spacing-150);
+    
     background-color: var(--color-neutral-200);
     color: var(--color-neutral-900);
 }
 
-/* ----- HERO SECTION ------ */
+        /* ----- HERO SECTION ------ */
 .hero{
     margin-block-start: var(--spacing-500);
 }
 
-/* ----- HERO CONTENT ------ */
+        /* ----- HERO CONTENT ------ */
 .hero-title{
-    line-height: 1;
     font-size: var(--font-size-48);
+    line-height: 1;
 }
 .hero-description{
     margin-block-start: var(--spacing-200);
+
     font-weight: var(--font-weight-500);
     line-height: 1.5;
     color: var(--color-neutral-400);
 }
 .hero-cta{
     margin-block-start: var(--spacing-400);
+
     display: flex;
     align-items: center;
+
     gap: var(--spacing-200);   
 }
 .preorder-link{
     padding: var(--spacing-150) var(--spacing-200);
+
     background-color: var(--color-orange-500);
     color: var(--color-neutral-0);
 }
 .release-date{
-    line-height: 1.5;
     font-weight: var(--font-weight-700);
-    text-transform: uppercase;
+    line-height: 1.5;
+    
     color: var(--color-neutral-400);
+
+    text-transform: uppercase;
+    
 } 
-.hero-image{
-    transform: translateX(1.5rem);
+.hero-image{    
     display: flex;
     align-items: center;
+
+    transform: translateX(1.5rem);
 }
 .product-img{
     border-radius: 1.5rem;    
 }
 .pattern-square,
-.pattern-square1{
+.second-pattern-square{
     display:none;
 }
 
-/* ---- IMAGES OF KEYBOARD AND GLASS --- */
+        /* ---- IMAGES OF KEYBOARD AND GLASS --- */
 .product-images{
-    display: flex;
-    align-items: center;
     margin-block-start: var(--spacing-200);
     margin-inline-end: var(--spacing-200);
+
+    display: flex;
+    align-items: center;
 }
 .product-image{
     display: block;
 }
 .keyboard-phone-img{
     position: relative;
+
     z-index: 0;
 }
 .product-image-phone {
     position: relative;
+
     transform: translateX(-1.5rem);
 }
 .product-image-phone::after {
-    content: "";
     position: absolute;
     inset: 0;
-    background-color: var(--color-orange-500);
-    opacity: 0.9;
-    pointer-events: none;
-    border-radius: 1.5rem; 
-    mix-blend-mode: multiply;   
     z-index: 1;
+
+    content: "";
+    
+    background-color: var(--color-orange-500);
+    opacity: 0.9;    
+    border-radius: 1.5rem; 
+    mix-blend-mode: multiply; 
+    
+    pointer-events: none;
 }
 
-
-/* ---- SECONDARY PRODUCT SECTION ---- */
+        /* ---- SECONDARY PRODUCT SECTION ---- */
 .product-title{
-    font-size: var(--font-size-32);
-    line-height: 1.2;
-    text-align: center;
     padding-inline: var(--spacing-400);
+
+    text-align: center;
+
+    font-size: var(--font-size-32);
+    line-height: 1.2;      
 }
 .product-description{
     margin-block-start: var(--spacing-200);
+
     font-weight: var(--font-weight-500);
     line-height: 1.5;
 }
 
-/* ------ KEYBOARD FEATURES ----- */
+        /* ------ KEYBOARD FEATURES ----- */
 .keyboard-features{
     display: flex;
     flex-direction: column;
+
     row-gap: var(--spacing-500);
 }
 .feature{
@@ -253,28 +276,35 @@ body{
 .feature-image-container{
     width: 4.06rem;
     height: 4.06rem;
-    background-color: var(--color-orange-500);
     padding: var(--spacing-250);
-    border-radius: 1rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-color: var(--color-orange-500);
+    
+    border-radius: 1rem;    
 }
 .feature-title{
     margin-block-start: var(--spacing-400);
+
     font-size: var(--font-size-24);
     line-height: 1.2;
+
     max-inline-size: 12.5rem;
     text-align: center;
 }
 .feature-description{
     margin-block-start: var(--spacing-250);
+
     font-weight: var(--font-weight-500);
     line-height: 1.5;
+
     text-align: center;
 }
 
-    /* ----- FOOTER ------ */
+        /* ----- FOOTER ------ */
 .footer{
     text-align: center;
 }
@@ -300,17 +330,18 @@ body{
         padding: var(--spacing-150) var(--spacing-200);
     } 
 
-    /* ----- HERO SECTION ------ */
+            /* ----- HERO SECTION ------ */
     .hero{
         margin-block-start: var(--spacing-600);
     }
     
-    /* ----- HERO CONTENT ------ */
+            /* ----- HERO CONTENT ------ */
     .hero-content{
+        height: 25.56rem;
+
         display: flex;
         align-items: center;
-        column-gap: var(--spacing-600);
-        height: 25.56rem;
+        column-gap: var(--spacing-600);        
     }
     .hero-text{
         padding-inline-start: var(--spacing-400);
@@ -326,10 +357,13 @@ body{
         margin-block-start: var(--spacing-500);
     }        
     .hero-image{
-        margin-block-start: 0;
-        transform: none; 
         height: 25.56rem;
+
+        margin-block-start: 0;
+                
         flex-shrink: 0;
+
+        transform: none; 
     }
     .hero-image img{
         width: 100%;
@@ -337,40 +371,46 @@ body{
         height: 100%;
     }
 
-        /* ---- IMAGES OF KEYBOARD AND GLASS --- */        
+            /* ---- IMAGES OF KEYBOARD AND GLASS --- */        
     .product-images{
         margin-block-start: var(--spacing-500);
-        column-gap: var(--spacing-400);
         margin-inline-end: 0;
         padding-inline: var(--spacing-400) 2.94rem;
+
+        column-gap: var(--spacing-400);        
     }   
     .product-image-phone {
         transform: none;
     }
 
-    /* ---- SECONDARY PRODUCT SECTION ---- */
+            /* ---- SECONDARY PRODUCT SECTION ---- */
     .product-info{
         margin-block-start: var(--spacing-500);
         margin-inline: 0;
+        padding-inline: var(--spacing-400) 2.94rem;
+
         display: flex;
         justify-content: space-evenly;
-        column-gap: var(--spacing-800);
-        padding-inline: var(--spacing-400) 2.94rem;
+
+        column-gap: var(--spacing-800);        
     }
     .product-title{
         padding-inline: 0;
+
         text-align: left;
     }
     .product-description{
         margin-block-start: 0;
     }
 
-    /* ------ KEYBOARD FEATURES ----- */
+            /* ------ KEYBOARD FEATURES ----- */
     .keyboard-features{
         margin-block-start: var(--spacing-1000);
         margin-inline: var(--spacing-400);
+
         display: grid;
-        grid-template-columns: repeat(2,1fr);        
+        grid-template-columns: repeat(2,1fr);     
+
         gap: var(--spacing-400);        
     }
     .feature{
@@ -378,15 +418,17 @@ body{
     }
     .feature-title{
         margin-block-start: var(--spacing-600);
-        padding-inline: 0;        
+        padding-inline: 0;   
+
         text-align: left;
     }
     .feature-description{
         margin-block-start: var(--spacing-200);
+
         text-align: left;
     }
 
-        /* ----- FOOTER ------ */
+            /* ----- FOOTER ------ */
     .footer{
         margin-block-start: var(--spacing-1000);
     }
@@ -400,106 +442,113 @@ body{
     body {
         overflow-x: clip;
     }
-     /* ------ HEADER ------ */         
+            /* ------ HEADER ------ */         
     .header{        
        max-width: 69.38rem;
        margin-inline: auto;
        padding-inline: 0;
     }  
     
-    /* ----- HERO SECTION ------ */  
+            /* ----- HERO SECTION ------ */  
     .hero{
         margin-block-start: var(--spacing-1000);    
     }
       
-   /* ----- HERO CONTENT ------ */
+            /* ----- HERO CONTENT ------ */
     .hero-content{
-        column-gap: 7.81rem;
-        height: 30rem;
-        max-width: 69.38rem;
-        margin-inline: auto;
         position: relative;
+
+        width: 100%;  
+        max-width: 69.38rem;      
+        height: 30rem;        
+        margin-inline: auto;
+
+        column-gap: 7.81rem;        
     }
     .hero-text{
         padding-inline: 0;
-        max-width: 27.81rem;
         width: 100%;
+        max-width: 27.81rem;
+        
     }
     .hero-description{
         margin-block-start: var(--spacing-200);
     }      
     .hero-image{
         height: 30rem;
-        flex-shrink: 1;
         min-width: 0;
         width: 33.75rem;
+
+        flex-shrink: 0;        
     }
 
-    /* ----- PATTERN SQUARE ------ */
-    .pattern-square {
+            /* ----- PATTERN SQUARE ------ */
+    .pattern-square,
+    .second-pattern-square{
+        width: 15.94rem;
+        height: 15.94rem;
+
         display: block;
-        position: absolute;
+        position: absolute;         
+    }
+    .pattern-square{
         top: 10.94rem;
         left: calc(50% + 34.69rem + 2rem);
-        width: 15.94rem;
-        height: 15.94rem;
     }
-    .pattern-square img {
-        display: block;
+    .pattern-square img,
+    .second-pattern-square img{
         width: 15.94rem;
         height: 15.94rem;
         max-width: none;
+
+        display: block;        
     }
 
-        /* ----- SECOND PATTERN SQUARE ------ */
-    .second-pattern-square {
-        display: block;
-        position: absolute;
+            /* ----- SECOND PATTERN SQUARE ------ */
+  .second-pattern-square{
         top: 58rem;       
         right: calc(50% + 34.69rem + 2rem);
-        width: 15.94rem;
-        height: 15.94rem; 
-    }
-    .second-pattern-square img {
-        display: block;
-        width: 15.94rem;
-        height: 15.94rem;
-        max-width: none;
-    }
-
-        /* ---- IMAGES OF KEYBOARD AND GLASS --- */        
+    }  
+  
+            /* ---- IMAGES OF KEYBOARD AND GLASS --- */        
     .secondary-container{
+        max-width: 69.38rem;
+        margin-inline: auto;
+
         display: flex;
         flex-direction: row;
         align-items: center;
-        column-gap: 7.81rem;
-        max-width: 69.38rem;
-        margin-inline: auto;
+
+        column-gap: 7.81rem;        
     }
     .product-images{
-        column-gap: 1.88rem;
         width: 45.63rem;
         padding-inline: 0;
+
+        column-gap: 1.88rem;        
     }   
     
-    /* ---- SECONDARY PRODUCT SECTION ---- */
+            /* ---- SECONDARY PRODUCT SECTION ---- */
     .product-info{
-        margin-block-start: 0;
         width: 15.94rem;
         height: 15.88rem;
-        flex-direction: column;
-        column-gap: 0;
+        margin-block-start: 0;
         padding-inline: 0;
+        
+        flex-direction: column;
+
+        column-gap: 0;        
     }
     .product-description{
         margin-block-start: 1.25rem;
     }
 
-    /* ------ KEYBOARD FEATURES ----- */
+            /* ------ KEYBOARD FEATURES ----- */
     .keyboard-features{
+        max-width: 69.38rem;        
         margin-block-start: 7.5rem;
         margin-inline: auto;
-        max-width: 69.38rem;
+        
         grid-template-columns: repeat(4,1fr);        
     }
 
@@ -507,6 +556,4 @@ body{
     .footer{
         margin-block-start: 7.5rem;
     }
-
-
 }
