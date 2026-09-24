@@ -403,6 +403,7 @@ body{
     }
     .product-description{
         margin-block-start: 0;
+        text-align: left;
     }
 
             /* ------ KEYBOARD FEATURES ----- */
